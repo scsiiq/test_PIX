@@ -22,7 +22,7 @@
             <_expression i:nil="true" />
             <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/Images.Core" i:type="d7p1:Picture">
               <d7p1:_bitmap xmlns:d8p1="http://schemas.datacontract.org/2004/07/System.Drawing">
-                <Data xmlns:d9p1="http://www.w3.org/2001/XMLSchema" i:type="d9p1:base64Binary" xmlns="">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</Data>
+                <Data xmlns:d9p1="http://www.w3.org/2001/XMLSchema" i:type="d9p1:base64Binary" xmlns="">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</Data>
               </d7p1:_bitmap>
             </_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -39,6 +39,91 @@
         <EnableStatus>true</EnableStatus>
         <Text></Text>
         <_activityFullName>Activities.Image.WaitWhileImageOnScreen</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i7" i:type="ExecutedStep">
+        <Childs />
+        <Id>5f025953-1a87-4b78-8919-022e0419a2ee</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i8">
+            <PropertyName>Result</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression></_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i9">
+            <PropertyName>Rectangles</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression></_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i10">
+            <PropertyName>Target</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression></_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i11">
+            <PropertyName>Accuracy</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:double">0.8</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId>0</SelectedOptionId>
+        <EnableStatus>true</EnableStatus>
+        <Text></Text>
+        <_activityFullName>Activities.Image.FindImageOnScreen</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i12" i:type="ExecutedStep">
+        <Childs />
+        <Id>9743f72f-4839-4f3c-9f16-a6c3e94b946c</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i13">
+            <PropertyName>ClickType</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/Activities.Image.Enums" i:type="d7p1:MouseClickType">Left</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i14">
+            <PropertyName>PercentX</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:int">50</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i15">
+            <PropertyName>PercentY</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:int">50</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i16">
+            <PropertyName>Target</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression></_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i17">
+            <PropertyName>Accuracy</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:double">0.8</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <Text></Text>
+        <_activityFullName>Activities.Image.ClickImage</_activityFullName>
       </AbstractStep>
     </Childs>
     <Id>4081bea1-3625-4d89-a02f-e7b7f416806c</Id>
