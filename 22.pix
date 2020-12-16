@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/BR.Logic">
+  <CompilationType>CSharp</CompilationType>
+  <Id>e8224089-08f6-4030-8d65-2c4d937a2d7b</Id>
+  <Logic z:Id="i2" i:type="ExecutedStep">
+    <Childs>
+      <AbstractStep z:Id="i3" i:type="ExecutedStep">
+        <Childs />
+        <Id>bceee861-e7f9-4787-b5a8-8c51076db9f3</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i4">
+            <PropertyName>Timeout</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>120</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i5">
+            <PropertyName>Target</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/Images.Core" i:type="d7p1:Picture">
+              <d7p1:_bitmap xmlns:d8p1="http://schemas.datacontract.org/2004/07/System.Drawing">
+                <Data xmlns:d9p1="http://www.w3.org/2001/XMLSchema" i:type="d9p1:base64Binary" xmlns="">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</Data>
+              </d7p1:_bitmap>
+            </_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i6">
+            <PropertyName>Accuracy</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:double">0.8</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId>0</SelectedOptionId>
+        <EnableStatus>true</EnableStatus>
+        <Text></Text>
+        <_activityFullName>Activities.Image.WaitWhileImageOnScreen</_activityFullName>
+      </AbstractStep>
+    </Childs>
+    <Id>4081bea1-3625-4d89-a02f-e7b7f416806c</Id>
+    <Parent i:nil="true" />
+    <PropertyValues />
+    <SelectedOptionId i:nil="true" />
+    <EnableStatus>true</EnableStatus>
+    <Text></Text>
+    <_activityFullName>BR.Core.Base.Container</_activityFullName>
+  </Logic>
+  <Name>22.pix*</Name>
+  <Params />
+  <Version i:nil="true" />
+</Script>
