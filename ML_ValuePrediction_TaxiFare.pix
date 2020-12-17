@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/BR.Logic">
+  <CompilationType>CSharp</CompilationType>
+  <Id>0097adc5-2f27-4c92-ad96-cabf3312ec14</Id>
+  <Logic z:Id="i2" i:type="ExecutedStep">
+    <Childs>
+      <AbstractStep z:Id="i3" i:type="ExecutedStep">
+        <Childs />
+        <Id>cad9a7bb-fe65-47f6-969b-69c263505a6c</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i4">
+            <PropertyName>Value</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>@"C:\test\test_ML\prediction\1\FarePredictionModel.zip"</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i5">
+            <PropertyName>To</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>modelPath</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <Text></Text>
+        <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i6" i:type="ExecutedStep">
+        <Childs />
+        <Id>3facefbf-3708-48e5-9f30-ee0afd0acff3</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i7">
+            <PropertyName>MLInput</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/Activities.ML.Models" i:type="d7p1:TeachMLInputModel">
+              <d7p1:ColumnData>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>0</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>vendor_id</d7p1:ColumnName>
+                  <d7p1:ColumnType>StringType</d7p1:ColumnType>
+                  <d7p1:IsLabel>false</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>1</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>rate_code</d7p1:ColumnName>
+                  <d7p1:ColumnType>NumType</d7p1:ColumnType>
+                  <d7p1:IsLabel>false</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>2</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>passenger_count</d7p1:ColumnName>
+                  <d7p1:ColumnType>NumType</d7p1:ColumnType>
+                  <d7p1:IsLabel>false</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>3</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>trip_time_in_secs</d7p1:ColumnName>
+                  <d7p1:ColumnType>NumType</d7p1:ColumnType>
+                  <d7p1:IsLabel>false</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>4</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>trip_distance</d7p1:ColumnName>
+                  <d7p1:ColumnType>NumType</d7p1:ColumnType>
+                  <d7p1:IsLabel>false</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>5</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>payment_type</d7p1:ColumnName>
+                  <d7p1:ColumnType>StringType</d7p1:ColumnType>
+                  <d7p1:IsLabel>false</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+                <d7p1:ColumnDescription>
+                  <d7p1:ColumnIndex>6</d7p1:ColumnIndex>
+                  <d7p1:ColumnName>fare_amount</d7p1:ColumnName>
+                  <d7p1:ColumnType>NumType</d7p1:ColumnType>
+                  <d7p1:IsLabel>true</d7p1:IsLabel>
+                  <d7p1:IsUsed>true</d7p1:IsUsed>
+                </d7p1:ColumnDescription>
+              </d7p1:ColumnData>
+              <d7p1:CsvDelimeter>44</d7p1:CsvDelimeter>
+              <d7p1:TrainingDataFilePath>C:\test\test_ML\prediction\1\taxi-fare-train.csv</d7p1:TrainingDataFilePath>
+            </_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i8">
+            <PropertyName>RegressionTrainer</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/Activities.ML.Models" i:type="d7p1:RegressionTrainer">FastTree</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i9">
+            <PropertyName>ModelOutputPath</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>modelPath</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i10">
+            <PropertyName>ModelRSquared</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>RSquared</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <Text></Text>
+        <_activityFullName>Activities.ML.ValuePrediction_Teach</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i11" i:type="ExecutedStep">
+        <Childs />
+        <Id>e8f1ffbb-dc7f-4ac3-95a2-9d62cec4a21f</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i12">
+            <PropertyName>Text</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>RSquared.ToString()</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i13">
+            <PropertyName>Title</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>"Model RSquared"</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i14">
+            <PropertyName>Timeout</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:int">0</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i15">
+            <PropertyName>TopMost</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:boolean">true</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <Text></Text>
+        <_activityFullName>Activities.Interactive.MessageBox</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i16" i:type="ExecutedStep">
+        <Childs />
+        <Id>1dc17f4a-731b-435c-96fa-50ad6c88bfbb</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i17">
+            <PropertyName>AddHeaders</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:boolean">true</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i18">
+            <PropertyName>IgnoreQuotes</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:boolean">false</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i19">
+            <PropertyName>DataTable</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>fareValuesTable</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i20">
+            <PropertyName>FileName</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>@"C:\test\test_ML\prediction\1\taxi-fare-train.csv"</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i21">
+            <PropertyName>Delimiter</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/Activities.CSV" i:type="d7p1:TypeDelimiter">Comma</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i22">
+            <PropertyName>Encoding</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/Activities.CSV" i:type="d7p1:TypeEncoding">Default</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <Text></Text>
+        <_activityFullName>Activities.CSV.ReadCSV</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i23" i:type="ExecutedStep">
+        <Childs />
+        <Id>70898186-1551-4c1d-a2c1-52d0ef90e693</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i24">
+            <PropertyName>ModelInputPath</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>modelPath</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i25">
+            <PropertyName>LabelColumnName</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>"fareAmountPredicted"</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i26">
+            <PropertyName>Data</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>fareValuesTable</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i27">
+            <PropertyName>PredictedData</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>predictedFareValues</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <Text></Text>
+        <_activityFullName>Activities.ML.ValuePrediction_Evaluate</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i28" i:type="ExecutedStep">
+        <Childs />
+        <Id>d3c182ca-7a77-481a-971a-d661a32e320d</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i29">
+            <PropertyName>AddHeaders</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:boolean">true</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i30">
+            <PropertyName>DataTable</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>predictedFareValues</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i31">
+            <PropertyName>Dictionary</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression></_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i32">
+            <PropertyName>FileName</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>@"C:\test\test_ML\prediction\1\TaxiFareValuesPredicted.csv"</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i33">
+            <PropertyName>Delimiter</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/Activities.CSV" i:type="d7p1:TypeDelimiter">Comma</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i34">
+            <PropertyName>Encoding</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/Activities.CSV" i:type="d7p1:TypeEncoding">Default</_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId>0</SelectedOptionId>
+        <EnableStatus>true</EnableStatus>
+        <Text></Text>
+        <_activityFullName>Activities.CSV.WriteCSV</_activityFullName>
+      </AbstractStep>
+    </Childs>
+    <Id>7a9906a7-d9d6-40db-9173-74fb2a10bf8e</Id>
+    <Parent i:nil="true" />
+    <PropertyValues />
+    <SelectedOptionId i:nil="true" />
+    <EnableStatus>true</EnableStatus>
+    <Text></Text>
+    <_activityFullName>BR.Core.Base.Container</_activityFullName>
+  </Logic>
+  <Name>ML_ValuePrediction_TaxiFare.pix*</Name>
+  <Params />
+  <Version i:nil="true" />
+</Script>
